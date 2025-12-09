@@ -612,7 +612,7 @@ ConfigManager.readKeyConfig = function(config, name) {
     if (value !== undefined) {
         return value;
     } else {
-        return JSON.parse(JSON.stringify(ConfigManager.defaultMap));
+        return JSON.parse(JSON.stringify(ConfigManager.wasdMap));
     }
 };
 
