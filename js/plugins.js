@@ -18,5 +18,6 @@ var $plugins =
 {"name":"ZS_RemoveCommandRemember","status":true,"description":"Remueve la opción \"Recordar Comando\" del menú de opciones","parameters":{}},
 {"name":"YEP_MoveRouteCore","status":true,"description":"v1.04 Expand the number of movement options for the move\nroute events using this plugin.","parameters":{}},
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
-{"name":"GALV_MessageSoundEffects","status":true,"description":"Play sound effects when during Show Text event commands.","parameters":{"Delay Time":"4","Default Talk SE":"Tsound,50,100","Default Confirm SE":"Tsoundend,70,100","-----------":"","Quick SE 1":"","Quick SE 2":"","Quick SE 3":"","Quick SE 4":""}}
+{"name":"GALV_MessageSoundEffects","status":true,"description":"Play sound effects when during Show Text event commands.","parameters":{"Delay Time":"4","Default Talk SE":"Tsound,50,100","Default Confirm SE":"Tsoundend,70,100","-----------":"","Quick SE 1":"","Quick SE 2":"","Quick SE 3":"","Quick SE 4":""}},
+{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY id129","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
 ];
