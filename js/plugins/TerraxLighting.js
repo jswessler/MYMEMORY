@@ -2794,14 +2794,14 @@ Imported.TerraxLighting = true;
 	   	context.save();
 	    y1 = y1 - flashlightoffset;
 	     
-	    r1 = 1;
-	  	r2 = 2;
-		grad = context.createRadialGradient(x1, y1, r1, x1, y1, r2);
-		grad.addColorStop(0, '#999999');
-		grad.addColorStop(1, color2);
+	    // r1 = 1;
+	  	// r2 = 2;
+		// grad = context.createRadialGradient(x1, y1, r1, x1, y1, r2);
+		// grad.addColorStop(0, '#999999');
+		// grad.addColorStop(1, color2);
 	
-		context.fillStyle = grad;
-		context.fillRect(x1-r2, y1-r2, r2*2, r2*2);
+		// context.fillStyle = grad;
+		// context.fillRect(x1-r2, y1-r2, r2*2, r2*2);
 	    
 	    // flashlight
 		switch(direction) {
