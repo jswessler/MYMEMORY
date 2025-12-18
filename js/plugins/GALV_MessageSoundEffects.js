@@ -165,6 +165,19 @@ Galv.MSE.plugin = function(arr) {
 		};
 	};
 };
+
+// -----------------------------------------------------------------------------
+// SPEAKER NAME → TALK SOUND MAP (HARDCODED)
+// -----------------------------------------------------------------------------
+Galv.MSE.nameSeMap = {
+    "Camille": {name: "TsoundCL", volume: 55, pitch: 98, pan: 0},
+    "Lanie": {name: "TsoundCL", volume: 50, pitch: 112, pan: 0},
+	"?????": {name: "TsoundML", volume: 70, pitch: 105, pan: 0}, //male researcher
+    "Clerk": {name: "TsoundMR", volume: 32, pitch: 110, pan: 0},
+	"D-47326": {name: "TsoundMR", volume: 60, pitch: 115, pan: 0},
+	"Dr. Barrett": {name: "Zbeep2", volume: 30, pitch: 55, pan: 0},
+    // add more as needed
+};
 	
 	
 Galv.MSE.makeSound = function(txt) {
@@ -200,11 +213,42 @@ Game_Message.prototype.initialize = function() {
     Galv.MSE.Game_Message_initialize.call(this);
 };
 
+// -----------------------------------------------------------------------------
+// YEP MESSAGE CORE NAME HANDLING
+// -----------------------------------------------------------------------------
+Galv.MSE.cleanName = function(text) {
+    if (!text) return "";
+
+    return text
+        .replace(/\\c\[\d+\]/gi, "") // remove color codes
+        .replace(/\\[^ ]+/gi, "")    // remove other control codes
+        .trim();
+};
+
+//chatgpt edit
 Galv.MSE.Window_Message_startMessage = Window_Message.prototype.startMessage;
 Window_Message.prototype.startMessage = function() {
 	this.delayTime = Galv.MSE.delay;
+
+	let name = "";
+
+    // YEP Message Core compatibility
+    if (this._nameWindow && this._nameWindow._text) {
+        name = this._nameWindow._text.trim();
+    }
+
+	if (name && Galv.MSE.nameSeMap[name]) {
+		// Use character-specific talk SE
+		$gameMessage.msgSe = Galv.MSE.nameSeMap[name];
+	} else {
+		// Revert to default if no match
+		$gameMessage.msgSe = Galv.MSE.defaultSe;
+	}
+    this._galvMseNameChecked = false;
 	Galv.MSE.Window_Message_startMessage.call(this);
 };
+
+//end chatgpt edits
 
 
 Galv.MSE.Window_Message_updateMessage = Window_Message.prototype.updateMessage;
@@ -213,17 +257,45 @@ Window_Message.prototype.updateMessage = function() {
 	return Galv.MSE.Window_Message_updateMessage.call(this);
 };
 
-Galv.MSE.Window_Message_processNormalCharacter = Window_Base.prototype.processNormalCharacter;
+Galv.MSE.Window_Message_processNormalCharacter =
+    Window_Base.prototype.processNormalCharacter;
+
 Window_Message.prototype.processNormalCharacter = function(textState) {
-	if (!this._showFast) {
-		if (this.delayTime >= Galv.MSE.delay) {
-			var soundName = $gameMessage.msgSe['name'];
-			var vol = Number($gameMessage.msgSe['volume']);
-			var pit = Number($gameMessage.msgSe['pitch']);
-			AudioManager.playSe({name: soundName, volume: vol, pitch: (pit + (Math.random()*20)-10), pan: Math.random()*20-10});
-			this.delayTime = 0;
-		};
-	};
+
+    // Detect speaker once per message
+    if (!this._galvMseNameChecked) {
+        this._galvMseNameChecked = true;
+
+        let rawName = "";
+        if (this._nameWindow && this._nameWindow._text) {
+            rawName = this._nameWindow._text;
+        }
+
+        const cleanName = Galv.MSE.cleanName(rawName);
+
+        if (cleanName && Galv.MSE.nameSeMap[cleanName]) {
+            $gameMessage.msgSe = Galv.MSE.nameSeMap[cleanName];
+        } else {
+            $gameMessage.msgSe = Galv.MSE.defaultSe;
+        }
+
+        // Debug if needed
+        console.log("Speaker:", cleanName);
+    }
+
+    if (!this._showFast) {
+        if (this.delayTime >= Galv.MSE.delay) {
+            const se = $gameMessage.msgSe;
+            AudioManager.playSe({
+                name: se.name,
+                volume: Number(se.volume),
+                pitch: Number(se.pitch) + (Math.random() * 20 - 10),
+                pan: Math.random() * 30 - 15
+            });
+            this.delayTime = 0;
+        }
+    }
+
     Galv.MSE.Window_Message_processNormalCharacter.call(this, textState);
 };
 
