@@ -280,7 +280,7 @@ Window_Message.prototype.processNormalCharacter = function(textState) {
         }
 
         // Debug if needed
-        console.log("Speaker:", cleanName);
+        //console.log("Speaker:", cleanName);
     }
 
     if (!this._showFast) {
