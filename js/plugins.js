@@ -20,5 +20,5 @@ var $plugins =
 {"name":"GALV_MessageSoundEffects","status":true,"description":"Play sound effects when during Show Text event commands.","parameters":{"Delay Time":"4","Default Talk SE":"TsoundCL,50,100","Default Confirm SE":"Tsoundend,70,100","-----------":"","Quick SE 1":"","Quick SE 2":"","Quick SE 3":"","Quick SE 4":""}},
 {"name":"JSW_delayLoad","status":true,"description":"Delays the appearance of loading.png until a minimum loading time has passed. Handy for running in browser so the loading screen doesn't pop up every 2 seconds when you have a bad connection.","parameters":{"DelayTime":"1000"}},
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
-{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.4","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
+{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.41","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
 ];

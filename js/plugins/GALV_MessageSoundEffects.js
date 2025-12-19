@@ -170,12 +170,12 @@ Galv.MSE.plugin = function(arr) {
 // SPEAKER NAME → TALK SOUND MAP (HARDCODED)
 // -----------------------------------------------------------------------------
 Galv.MSE.nameSeMap = {
-    "Camille": {name: "TsoundCL", volume: 55, pitch: 98, pan: 0},
-    "Lanie": {name: "TsoundCL", volume: 50, pitch: 112, pan: 0},
-	"?????": {name: "TsoundML", volume: 70, pitch: 105, pan: 0}, //male researcher
-    "Clerk": {name: "TsoundMR", volume: 32, pitch: 110, pan: 0}, //Escape room clerk
-	"D-47326": {name: "TsoundMR", volume: 60, pitch: 115, pan: 0}, //Dboi
-	"Dr. Barrett": {name: "TsoundB", volume: 25, pitch: 125, pan: 0},
+    "Camille": {name: "TsoundCL", volume: 60, pitch: 98, pan: 0},
+    "Lanie": {name: "TsoundCL", volume: 56, pitch: 112, pan: 0},
+	"?????": {name: "TsoundML", volume: 72, pitch: 105, pan: 0}, //male researcher
+    "Clerk": {name: "TsoundMR", volume: 40, pitch: 110, pan: 0}, //Escape room clerk
+	"D-47326": {name: "TsoundMR", volume: 40, pitch: 113, pan: 0}, //Dboi
+	"Dr. Barrett": {name: "TsoundB", volume: 17, pitch: 85, pan: 0},
     // add more as needed
 };
 	
