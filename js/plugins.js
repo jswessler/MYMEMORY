@@ -21,5 +21,5 @@ var $plugins =
 {"name":"JSW_delayLoad","status":true,"description":"Delays the appearance of loading.png until a minimum loading time has passed. Handy for running in browser so the loading screen doesn't pop up every 2 seconds when you have a bad connection.","parameters":{"DelayTime":"500"}},
 {"name":"JSW_MobileButtons","status":true,"description":"Adds mobile touch zones for PageUp / PageDown when switch 32 & switch 84 is ON","parameters":{}},
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
-{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.6","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
+{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.61","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
 ];
