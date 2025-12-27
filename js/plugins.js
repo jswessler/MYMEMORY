@@ -3,7 +3,7 @@
 var $plugins =
 [
 {"name":"ARP_TitleCommandExit","status":true,"description":"v1.00 Adds an option in the title command window to close\r\ngame window.","parameters":{"Command Exit":"Quit Game","Show Exit":"true"}},
-{"name":"Community_Basic","status":true,"description":"Plugin used to set basic parameters.","parameters":{"cacheLimit":"20","screenWidth":"","screenHeight":"","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"auto","alwaysDash":"off"}},
+{"name":"Community_Basic","status":true,"description":"Plugin used to set basic parameters.","parameters":{"cacheLimit":"20","screenWidth":"","screenHeight":"","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"webgl","alwaysDash":"off"}},
 {"name":"CustomLogo","status":true,"description":"Shows RPG Maker and user logos at the start of the game.","parameters":{"logo1":"","logo1ImageName":"logo","logo1Skippable":"true","logo1Coordinate":"","logo1X":"0","logo1Y":"0","logo1Origin":"0","logo1Time":"","logo1FadeinFrames":"45","logo1FadeoutFrames":"45","logo1DurationFrames":"200","logo2":"","logo2ImageName":"","logo2Skippable":"true","logo2Coordinate":"","logo2X":"0","logo2Y":"0","logo2Origin":"0.5","logo2Time":"","logo2FadeinFrames":"12","logo2FadeoutFrames":"12","logo2DurationFrames":"120","logo3":"","logo3ImageName":"","logo3Skippable":"true","logo3Coordinate":"","logo3X":"408","logo3Y":"312","logo3Origin":"0.5","logo3Time":"","logo3FadeinFrames":"12","logo3FadeoutFrames":"12","logo3DurationFrames":"120","allowTotalSkip":"true"}},
 {"name":"GALV_BasicEventShadows","status":true,"description":"(v.1.2) Display shadows under the player or events on the map.","parameters":{"Shadow Image":"Shadow1","Shadow Offset":"5"}},
 {"name":"SRD_FullscreenToggleOption","status":true,"description":"Adds a Fullscreen Toggle to the Options Window","parameters":{"Option Name":"Windowed Mode","Position":"Middle","Default Value":"false","Persist Default?":"false"}},
@@ -17,9 +17,10 @@ var $plugins =
 {"name":"ZS_RemoveCommandRemember","status":true,"description":"Remueve la opción \"Recordar Comando\" del menú de opciones","parameters":{}},
 {"name":"YEP_MoveRouteCore","status":true,"description":"v1.04 Expand the number of movement options for the move\nroute events using this plugin.","parameters":{}},
 {"name":"GALV_MessageSoundEffects","status":true,"description":"Play sound effects when during Show Text event commands.","parameters":{"Delay Time":"4","Default Talk SE":"TsoundCL,50,100","Default Confirm SE":"Tsoundend,70,100","-----------":"","Quick SE 1":"","Quick SE 2":"","Quick SE 3":"","Quick SE 4":""}},
-{"name":"JSW_delayLoad","status":true,"description":"Delays the appearance of loading.png until a minimum loading time has passed. Handy for running in browser so the loading screen doesn't pop up every 2 seconds when you have a bad connection.","parameters":{"DelayTime":"500"}},
+{"name":"JSW_delayLoad","status":true,"description":"Delays the appearance of loading.png until a minimum loading time has passed. Handy for running in browser so the loading screen doesn't pop up every 2 seconds when you have a bad connection.","parameters":{"DelayTime":"400"}},
 {"name":"JSW_MobileButtons","status":true,"description":"Adds mobile touch zones for PageUp / PageDown when switch 32 & switch 84 is ON","parameters":{}},
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
 {"name":"JSW_TitleScreenChange","status":true,"description":"Changes title image AND title command position based on LocalStorage (MV-compatible).","parameters":{}},
-{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.62","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
+{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.63","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}},
+{"name":"TY_AdjustVolume","status":true,"description":"v1.0 Adjust Volume","parameters":{"Adjust Volume":"5"}}
 ];
