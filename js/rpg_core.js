@@ -3016,7 +3016,6 @@ Input.keyMapper = {
     45: 'escape',   // insert
     69: 'pagedown', //shake the shakelight
     81: 'pageup',   // Q & turn on/off the shakelight
-    87: 'up', // W
     88: 'escape',   // X
     90: 'ok',       // Z
     96: 'escape',   // numpad 0

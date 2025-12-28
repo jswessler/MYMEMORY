@@ -1,6 +1,6 @@
 /*:
  * @target MV
- * @plugindesc Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.
+ * @plugindesc Shows a bottom-left status bar with variable-based scaling and shaking when switch 84 is ON.
  * @author jswessler & ChatGPT
  */
 
@@ -83,9 +83,9 @@
             255,
             0
         );
-        //tint
+        //tint when low battery
         if (value17 < 220) {
-            $gameScreen.tintPicture(49, [255, 0, 0, -80], 0)
+            $gameScreen.tintPicture(49, [255, 0, 0, -90], 0)
         } else {
             $gameScreen.tintPicture(49, [0, 0, 0, 0], 0)
         }

@@ -1,10 +1,9 @@
 /*:
- * @plugindesc Changes title image AND title command position based on LocalStorage (MV-compatible).
+ * @plugindesc Changes title image and title command position based on LocalStorage. Hard-coded values.
  * @author jswessler & ChatGPT
  *
  * @help
  * Uses Window_TitleCommand.updatePlacement (MV-style).
- * Disable other title command position plugins.
  */
 
 (function() {

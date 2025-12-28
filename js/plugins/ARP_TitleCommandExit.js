@@ -19,6 +19,9 @@
  * @help This plugin does not provide plugin commands.
  */
 
+//Modified by jswessler to auto-detect if we're playing in a browser, and not show the button
+//If you hit exit game on the SCP wiki you need to reload the page
+
 (function() {
 
     var parameters = PluginManager.parameters('ARP_TitleCommandExit');
@@ -29,7 +32,7 @@
             Window_TitleCommand.prototype.makeCommandList;
     Window_TitleCommand.prototype.makeCommandList = function() {
         _Window_TitleCommand_makeCommandList.call(this);
-        if (eval(showExit)){
+        if (eval(showExit) && Utils.isNwjs()){
             this.addCommand(textExit, 'exitGame');
         }
     };

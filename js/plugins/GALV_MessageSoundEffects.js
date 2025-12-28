@@ -172,11 +172,11 @@ Galv.MSE.plugin = function(arr) {
 Galv.MSE.nameSeMap = {
     "Camille": {name: "TsoundCL", volume: 77, pitch: 98, pan: 0},
     "Lanie": {name: "TsoundCL", volume: 82, pitch: 116, pan: 0},
-	"?????": {name: "Tnew3", volume: 40, pitch: 112, pan: 0}, //male researcher
+	"?????": {name: "Tnew3", volume: 40, pitch: 95, pan: 0}, //MTF
+	"Dr. Thorpe": {name: "Tnew3", volume: 40, pitch: 112, pan: 0}, //Dr. Thorpe
     "Clerk": {name: "Tnew2", volume: 33, pitch: 110, pan: 0}, //Escape room clerk
 	"D-47326": {name: "Tnew5", volume: 40, pitch: 75, pan: 0}, //Dboi
 	"Dr. Barrett": {name: "TsoundB", volume: 30, pitch: 84, pan: 0},
-    // add more as needed
 };
 	
 	

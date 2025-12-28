@@ -6,13 +6,13 @@
  * @text Loading Image Delay (ms)
  * @type number
  * @min 0
- * @default 1000
+ * @default 500
  * @desc Time in milliseconds before loading.png is allowed to appear
  */
 
 (function() {
     const parameters = PluginManager.parameters('DelayedLoadingImage');
-    const delayTime = Number(parameters.DelayTime || 1000);
+    const delayTime = Number(parameters.DelayTime || 500);
 
     // Store when loading started
     let loadingStartTime = 0;

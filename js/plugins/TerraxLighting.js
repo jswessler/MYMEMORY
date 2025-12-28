@@ -2803,7 +2803,7 @@ Imported.TerraxLighting = true;
 		// context.fillStyle = grad;
 		// context.fillRect(x1-r2, y1-r2, r2*2, r2*2);
 	    
-	    // flashlight
+	    // flashlight - This section modified by jswessler to make the shakelight work better
 		switch(direction) {
 			case 6:
 				y1 = y1 - 35
