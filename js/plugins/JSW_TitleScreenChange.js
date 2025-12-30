@@ -42,7 +42,7 @@
         goodend: {
             image: "goodend",
             offsetX: -0,
-            offsetY: 15,
+            offsetY: 40,
             width: 600,
             background: 1
         }
