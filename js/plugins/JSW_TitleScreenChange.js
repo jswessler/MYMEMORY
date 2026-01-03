@@ -39,6 +39,14 @@
             background: 1
         },
 
+        empty: {
+            image: "black",
+            offsetX: 0,
+            offsetY: 0,
+            width: 300,
+            background: 1
+        },
+
         goodend: {
             image: "goodend",
             offsetX: -0,
