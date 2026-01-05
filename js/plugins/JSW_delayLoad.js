@@ -12,7 +12,11 @@
 
 (function() {
     const parameters = PluginManager.parameters('DelayedLoadingImage');
-    const delayTime = Number(parameters.DelayTime || 500);
+
+    let delayTime = 50;
+    if (Utils.isNwjs) {
+        delayTime = Number(200);
+    }
 
     // Store when loading started
     let loadingStartTime = 0;
