@@ -22,5 +22,5 @@ var $plugins =
 {"name":"JSW_MobileButtons","status":true,"description":"Adds mobile touch zones for PageUp / PageDown when switch 32 & switch 84 is ON","parameters":{}},
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
 {"name":"JSW_TitleScreenChange","status":true,"description":"Changes title image AND title command position based on LocalStorage (MV-compatible).","parameters":{}},
-{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.73","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
+{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.74","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
 ];
