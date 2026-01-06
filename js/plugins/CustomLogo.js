@@ -564,6 +564,13 @@
 
     var ALLOW_TOTAL_SKIP = pluginParams.allowTotalSkip == "true";
 
+    //chatgpt function 1
+    function shouldShowCustomLogo() {
+        const gameState = Number(localStorage.getItem("GameState") || 0);
+        const hardReset = localStorage.getItem("HardReset") === "true";
+        return gameState >= 3 || hardReset;
+    }
+
 
     ImageManager.loadLogoImages = function() {
         this.loadSystem(LOGO1_IMAGE_NAME);
@@ -598,7 +605,11 @@
             } else {
                 this.checkPlayerLocation();
                 DataManager.setupNewGame();
-                SceneManager.goto(Scene_Logo);
+                if (shouldShowCustomLogo()) {
+                    SceneManager.goto(Scene_Logo);
+                } else {
+                    SceneManager.goto(Scene_Title);
+                }
                 Window_TitleCommand.initCommandPosition();
             }
             this.updateDocumentTitle();
