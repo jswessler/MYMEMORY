@@ -23,5 +23,5 @@ var $plugins =
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
 {"name":"JSW_OptionControls","status":true,"description":"Adds an option to the Options menu to control Switch 34.","parameters":{"Option Name":"Easy Mode","Switch ID":"35"}},
 {"name":"JSW_TitleScreenChange","status":true,"description":"Changes title image AND title command position based on LocalStorage (MV-compatible).","parameters":{}},
-{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY 0.78","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
+{"name":"JSW_VersionNum","status":true,"description":"Displays custom text at the top-left corner of the screen with a chosen font.","parameters":{"Display Text":"MYMEMORY Alpha 1","Font File":"ariafont.ttf","Font Size":"24","Text Color":"#FFFFFF"}}
 ];
