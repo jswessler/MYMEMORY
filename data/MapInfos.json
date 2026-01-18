@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":false,"name":"debug","order":14,"parentId":0,"scrollX":819,"scrollY":457},
-{"id":2,"expanded":false,"name":"bedroom","order":1,"parentId":0,"scrollX":1257,"scrollY":449},
+{"id":2,"expanded":false,"name":"bedroom","order":1,"parentId":0,"scrollX":1258,"scrollY":449},
 {"id":3,"expanded":true,"name":"Escape Room Entrance","order":5,"parentId":6,"scrollX":940,"scrollY":449},
 {"id":4,"expanded":false,"name":"Containment Chamber","order":2,"parentId":0,"scrollX":1188,"scrollY":449},
 {"id":5,"expanded":false,"name":"Van","order":3,"parentId":0,"scrollX":819,"scrollY":457},
