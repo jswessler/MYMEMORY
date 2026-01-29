@@ -1,14 +1,12 @@
 (function() {
-    const _SceneBoot_start = Scene_Boot.prototype.start;
+    const _start = Scene_Boot.prototype.start;
     Scene_Boot.prototype.start = function() {
-        if (document.fonts && document.fonts.status !== 'loaded') {
-            document.fonts.ready.then(() => {
-                console.log("Font Loaded");
-                _SceneBoot_start.call(this);
-            });
+        if (document.fonts && document.fonts.status !== "loaded") {
+            document.fonts.ready.then(() => _start.call(this));
         } else {
-            console.log("Font already loaded");
-            _SceneBoot_start.call(this);
+            console.log("Font Loaded");
+            _start.call(this);
         }
     };
 })();
+

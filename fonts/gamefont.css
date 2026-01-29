@@ -1,7 +1,23 @@
 @font-face {
-    font-family: GameFont;
-    src: url("ariafont.ttf"), url("ariafont.woff2");
+    font-family: 'GameFont';
+    src:
+        url("ariafont.woff2") format("woff2"),
+        url("ariafont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Aria';
+    src:
+        url("ariafont.woff2") format("woff2"),
+        url("ariafont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 .IIV::-webkit-media-controls-play-button,
 video::-webkit-media-controls-start-playback-button {
