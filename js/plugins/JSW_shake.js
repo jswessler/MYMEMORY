@@ -33,7 +33,7 @@
         const lowlight = $gameVariables.value(32);
 
         if (val <= 1) {
-            batCap = Math.random()*325+700;
+            batCap = Math.random()*300+700;
         }
 
         if (sw) {
@@ -85,7 +85,7 @@
         );
         //tint when low battery
         if (value17 < 220) {
-            $gameScreen.tintPicture(49, [255, 0, 0, -90], 0)
+            $gameScreen.tintPicture(49, [255, 0, 0, -(value17/1.5)], 0)
         } else {
             $gameScreen.tintPicture(49, [0, 0, 0, 0], 0)
         }
