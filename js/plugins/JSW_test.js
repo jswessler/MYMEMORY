@@ -6,6 +6,6 @@
 
 @author MechPen */ (() => {
 
-Graphics._defaultStretchMode = function() { return false; };
+Graphics._defaultStretchMode = function() { return true; };
 
 })();
