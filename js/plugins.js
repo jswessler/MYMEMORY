@@ -24,5 +24,6 @@ var $plugins =
 {"name":"JSW_MobileButtons","status":true,"description":"Adds mobile touch zones for PageUp / PageDown when switch 32 & switch 84 is ON","parameters":{}},
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
 {"name":"JSW_OptionControls","status":true,"description":"Adds an option to the Options menu to control Switch 34.","parameters":{"Option Name":"Easy Mode","Switch ID":"35"}},
-{"name":"JSW_TitleScreenChange","status":true,"description":"Changes title image and title command position based on LocalStorage. Hard-coded values.","parameters":{}}
+{"name":"JSW_TitleScreenChange","status":true,"description":"Changes title image and title command position based on LocalStorage. Hard-coded values.","parameters":{}},
+{"name":"OrangeGreenworks","status":true,"description":"Steamworks Integration <OrangeGreenworks>","parameters":{}}
 ];
