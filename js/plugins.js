@@ -23,7 +23,7 @@ var $plugins =
 {"name":"JSW_delayLoad","status":true,"description":"Delays the appearance of loading.png until a minimum loading time has passed. Handy for running in browser so the loading screen doesn't pop up every 2 seconds when you have a bad connection.","parameters":{"DelayTime":"400"}},
 {"name":"JSW_MobileButtons","status":true,"description":"Adds mobile touch zones for PageUp / PageDown when switch 32 & switch 84 is ON","parameters":{}},
 {"name":"JSW_shake","status":true,"description":"Shows a bottom-right status bar with variable-based scaling and shaking when switch 84 is ON.","parameters":{}},
-{"name":"JSW_OptionControls","status":true,"description":"Adds an option to the Options menu to control Switch 34.","parameters":{"Option Name":"Easy Mode","Switch ID":"35"}},
+{"name":"JSW_OptionControls","status":true,"description":"Adds an option to the Options menu to control Switch 35.","parameters":{"Option Name":"Reduce Difficulty","Switch ID":"35"}},
 {"name":"JSW_TitleScreenChange","status":true,"description":"Changes title image and title command position based on LocalStorage. Hard-coded values.","parameters":{}},
 {"name":"OrangeGreenworks","status":true,"description":"Steamworks Integration <OrangeGreenworks>","parameters":{}}
 ];

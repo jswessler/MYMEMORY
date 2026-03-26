@@ -17,7 +17,7 @@
     const pluginName = "Switch35Option";
     const params = PluginManager.parameters(pluginName);
 
-    const OPTION_NAME = String(params["Option Name"] || "Easy Mode");
+    const OPTION_NAME = String(params["Option Name"] || "Reduce Difficulty");
     const SWITCH_ID = Number(params["Switch ID"] || 35);
 
     // Add option command
